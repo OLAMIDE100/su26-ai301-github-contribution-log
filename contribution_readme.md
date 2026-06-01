@@ -1,6 +1,6 @@
 # Contribution 1: Badge request: GitHub Discussions
 
-**Contribution Number:** 1 
+**Contribution Number:** 1
 **Student:** Adewale Olamide Adesoba
 **Issue:** https://github.com/badges/shields/issues/6047
 **Status:** Phase I Complete
