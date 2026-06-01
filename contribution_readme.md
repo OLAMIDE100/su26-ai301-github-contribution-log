@@ -31,6 +31,7 @@ Currently only the total number of discussion of the discussion badge is availab
 ### Affected Components
 
 Discussion badge
+https://github.com/badges/shields/tree/master/services/github
 
 ---
 
