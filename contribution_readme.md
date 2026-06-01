@@ -1,15 +1,16 @@
 # Contribution [#]: [Issue Title]
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 1 
+**Student:** Adewale Olamide Adesoba
+**Issue:** https://github.com/badges/shields/issues/6047  
+**Status:** Phase I Complete
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+
+Having used shield.io in the past to make my github profile page colorful and my clear understanding of the issue together with the undelaying technology powering this open source tool like  calling the github api and consuming the response, also the ease of reproducing the issue i hope to confidently add this feature and improve my open source contribution skillset. 
 
 ---
 
@@ -17,19 +18,19 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The solution i will be providing is more of feature enhancement rather than issue, it focuses on adding the answered/unanswered filter variants of the discussions badge to the already existing badges 
 
 ### Expected Behavior
 
-[What should happen?]
+Two more discussions badge providing information on answered and unanswered  variants
 
 ### Current Behavior
 
-[What actually happens?]
+Currently only the total number of discussion of the discussion badge is available
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+Discussion badge
 
 ---
 
@@ -72,6 +73,7 @@ Using UMPIRE framework (adapted):
 **Match:** [What similar patterns/solutions exist in the codebase?]
 
 **Plan:** [Step-by-step implementation plan]
+
 1. [Modify file X to do Y]
 2. [Add function Z]
 3. [Update tests]
@@ -88,14 +90,14 @@ Using UMPIRE framework (adapted):
 
 ### Unit Tests
 
-- [ ] Test case 1: [Description]
-- [ ] Test case 2: [Description]
-- [ ] Test case 3: [Description]
+- Test case 1: [Description]
+- Test case 2: [Description]
+- Test case 3: [Description]
 
 ### Integration Tests
 
-- [ ] Integration scenario 1
-- [ ] Integration scenario 2
+- Integration scenario 1
+- Integration scenario 2
 
 ### Manual Testing
 
@@ -128,6 +130,7 @@ Using UMPIRE framework (adapted):
 **PR Description:** [Draft or final PR description - much of the content above can be adapted]
 
 **Maintainer Feedback:**
+
 - [Date]: [Summary of feedback received]
 - [Date]: [How you addressed it]
 
@@ -156,3 +159,4 @@ Using UMPIRE framework (adapted):
 - [Link to helpful documentation]
 - [Tutorial or Stack Overflow post that helped]
 - [GitHub issues or discussions that helped]
+
