@@ -39,19 +39,26 @@ https://github.com/badges/shields/tree/master/services/github
 
 ### Environment Setup
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+I cloned the master repository, updated my node package manager and ran the required the commands to start the server on my local computer, the only issue was just updating my node package manager as the current version was not compartible with the recommended version from the source repository
+
+Working branch: https://github.com/OLAMIDE100/shields/tree/add-discussion-variants
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. git clone master branch
+2. update node to 22
+3. Run npm ci to install the dependencies.
+4. Run npm start to start the badge server and the frontend dev server.
+5. Open http://localhost:3000/ to view the frontend.
+6. Navigate to others, then click github discussion under 
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
-- **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **Screenshots/logs:** 
+![results](images/issue_replication_code_setup.png)
+
+![code-run](images/issues_replication.png)
+- **My findings:** The answered and the unanswered variant of the discussion section is not yet available
 
 ---
 
@@ -59,31 +66,33 @@ https://github.com/badges/shields/tree/master/services/github
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+From my analysis the last time the section was updated, the api for loading the data for this section was not yet available in github
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+Add the discussion variants by add codes both for backend and frontend to make this effective
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** The solution will be an extention of the already existing github discussion badge to cover its total answered and unanswered variants.
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** We already have the github discussion badge code for both frontend and backend
 
-**Plan:** [Step-by-step implementation plan]
+**Plan:** 
 
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+1. test the api to understand the response and how to properly load them
+2. add the frontend and backend code
+2. add unit test 
 
-**Implement:** [Link to your branch/commits as you work]
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Implement:** https://github.com/OLAMIDE100/shields/tree/add-discussion-variants
 
-**Evaluate:** [How will you verify it works?]
+**Review:** Will self-review against project CONTRIBUTING.md and 
+commit message conventions before opening PR.
+
+**Evaluate:** check that the github discussion total answered and unanswered variant areseen in my local environment while reproducing and all test associated with them pass successfully
 
 ---
 
