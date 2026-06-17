@@ -1,4 +1,4 @@
 <h3>My Skills include 👨‍💻</h3>
 
-![GitHub followers](https://img.shields.io/github/followers/:OLAMIDE100)
+![GitHub followers](https://img.shields.io/github/followers/OLAMIDE100)
 
