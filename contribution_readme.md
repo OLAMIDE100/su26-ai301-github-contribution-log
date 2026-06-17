@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Adewale Olamide Adesoba  
 **Issue:** https://github.com/badges/shields/issues/6047  
-**Status:** Phase II Complete
+**Status:** Phase III Complete
 
 ---
 
@@ -117,9 +117,26 @@ commit message conventions before opening PR.
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week 3 Progress
 
-[What you built this week, challenges faced, decisions made]
+**What I built:**
+- Setup the example files in the service folder to foster my practical knowledge on how it works in development environment
+- Added 2 services:
+  - service 1: get the total count of answered github repository discussion
+  - service 2: get the total count of answered github repository discussion
+- Added 2 test:
+  - Test 1: repo exist
+  - Test 2: repo have discussion
+- Update the frontend pointing to the documentation
+- All existing tests still pass (ran full test suite)
+
+**Challenges faced:**
+- Invalid error as no github token was provided locally
+
+**Commits this week:**
+- e0251485afd3a470e092022c2c951d635e07fdfb: added both the service and tester for both the answered and unanswered variant of  github discussion
+
+
 
 ### Week [Y] Progress
 

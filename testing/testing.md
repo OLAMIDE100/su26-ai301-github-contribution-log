@@ -1,12 +1,17 @@
-<h3>My Skills include 👨‍💻</h3>
 
-![GitHub followers](https://img.shields.io/github/followers/OLAMIDE100)
 
-<b></b>
+![GitHub discussion ](http://localhost:8080/github/discussions/vercel/next.js)
 
-![GitHub followers](https://img.shields.io/github/discussions/OLAMIDE100/shields)
 
 <b></b>
 
-![EXAMPLE](http://localhost:8080/example/mide)
+![GitHub discussion answered ](http://localhost:8080/github/discussions-answered/vercel/next.js)
+
+
+<b></b>
+
+![GitHub discussion unanswered ](http://localhost:8080/github/discussions-unanswered/vercel/next.js)
+
+
+
 
