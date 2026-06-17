@@ -133,7 +133,7 @@ check the badge after setup in my local machine
 - Invalid error as no github token was provided locally
 
 **Commits this week:**
-- e0251485afd3a470e092022c2c951d635e07fdfb: added both the service and tester for both the answered and unanswered variant of  github discussion
+- https://github.com/badges/shields/commit/e0251485afd3a470e092022c2c951d635e07fdfb: added both the service and tester for both the answered and unanswered variant of  github discussion
 
 
 
