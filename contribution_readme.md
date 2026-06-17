@@ -100,18 +100,17 @@ commit message conventions before opening PR.
 
 ### Unit Tests
 
-- Test case 1: [Description]
-- Test case 2: [Description]
-- Test case 3: [Description]
+- Test case 1: test for availability of repo
+- Test case 2: test for presence of repo discussion
 
 ### Integration Tests
 
-- Integration scenario 1
-- Integration scenario 2
+- github api authentication locally
+
 
 ### Manual Testing
 
-[What you tested manually and results]
+check the badge after setup in my local machine
 
 ---
 
