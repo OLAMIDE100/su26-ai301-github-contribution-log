@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Adewale Olamide Adesoba  
 **Issue:** https://github.com/badges/shields/issues/6047  
-**Status:** Phase III Complete
+**Status:** Phase IV Complete
 
 ---
 
@@ -137,34 +137,53 @@ check the badge after setup in my local machine
 
 
 
-### Week [Y] Progress
+### Week 4 Progress
 
-[Continue documenting as you work]
 
-### Code Changes
 
-- **Files modified:** [List]
-- **Key commits:** [Links to important commits]
-- **Approach decisions:** [Why you chose certain approaches]
+## Pull Request 
 
----
+**PR Link:** https://github.com/badges/shields/pull/11951
 
-## Pull Request
+**PR Description:** 
 
-**PR Link:** [GitHub PR URL when submitted]
+Add the variant badge of github discussion (answered/unanswered) together with its test and documentation
 
-**PR Description:** [Draft or final PR description - much of the content above can be adapted]
+Closes  https://github.com/badges/shields/issues/6047
+
+## Badge endpoint
+
+`/github/discussions-answered/:user/:repo`
+`/github/discussions-unanswered/:user/:repo`
+
+Examples:
+- answered discussion: `/github/discussions-answered/vercel/next.js`
+- unanswered discussion: `/github/discussions-unanswered/vercel/next.js`
+
+
+## Implementation
+
+- `services/github/github-discussions-answered.service.js` — fetches the total number of answered discussions for a specific repository
+- `services/github/github-discussions-answered.tester.js` — unit tests for URL, transform, and render logic
+- `services/github/github-discussions-unanswered.service.js` — fetches the total number of unanswered discussions for a specific repository
+- `services/github/github-discussions-unanswered.tester.js` — unit tests for URL, transform, and render logic
+
+## Tests
+
+- `npm run test:services -- --only=GithubTotalDiscussions,GithubAnsweredDiscussions,GithubUnansweredDiscussions` — 6 passing
 
 **Maintainer Feedback:**
 
-- [Date]: [Summary of feedback received]
-- [Date]: [How you addressed it]
+- 28/06/2026: Pull request name update to enable automated ci testing
 
-**Status:** [Awaiting review / Iterating / Approved / Merged]
+
+**Status:** Iterating
 
 ---
 
 ## Learnings & Reflections
+
+In general patience was required to wait for the maintainers updates on the pull request
 
 ### Technical Skills Gained
 
