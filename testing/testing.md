@@ -1,16 +1,16 @@
 
 
-![GitHub discussion ](http://localhost:8080/github/discussions/vercel/next.js)
+![GitHub discussion ](http://localhost:8080/github/discussions/all/vercel/next.js)
 
 
 <b></b>
 
-![GitHub discussion answered ](http://localhost:8080/github/discussions/vercel/next.js/answered)
+![GitHub discussion answered ](http://localhost:8080/github/discussions/answered/vercel/next.js)
 
 
 <b></b>
 
-![GitHub discussion unanswered ](http://localhost:8080/github/discussions/vercel/next.js/unanswered)
+![GitHub discussion unanswered ](http://localhost:8080/github/discussions/unanswered/vercel/next.js)
 
 
 

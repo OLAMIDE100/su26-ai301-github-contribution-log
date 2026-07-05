@@ -18,11 +18,17 @@ Having used shield.io in the past to make my github profile page colorful and my
 
 ### Problem Description
 
-The solution i will be providing is more of feature enhancement rather than issue, it focuses on adding the answered/unanswered filter variants of the discussions badge to the already existing badges 
+Issue [#6047](https://github.com/badges/shields/issues/6047) is a feature enhancement for shields.io's existing GitHub Discussions badge. Users can already display the total number of discussions for a repository, but there is no way to show how many of those discussions have been answered or are still unanswered. Since GitHub's API now supports filtering discussions by answered status, shields.io should expose those counts as badge variants so README authors and profile pages can surface more useful discussion metrics without building custom integrations.
 
 ### Expected Behavior
 
-Two more discussions badge providing information on answered and unanswered  variants
+The existing GitHub Discussions badge should be extended with two path variants on the same endpoint:
+
+- **Total (existing):** `/github/discussions/:user/:repo` — returns the total discussion count (e.g. `28406 total`)
+- **Answered:** `/github/discussions/:user/:repo/answered` — returns only answered discussions (e.g. `5167 answered`)
+- **Unanswered:** `/github/discussions/:user/:repo/unanswered` — returns only unanswered discussions (e.g. `16696 unanswered`)
+
+Each variant should render as a distinct badge (label + count + colour), follow the same service/tester patterns as other GitHub badges in the project, include unit tests for URL construction, transform, and render logic, and be documented in the frontend so users can discover and copy the new badge URLs. The original total badge must continue to work unchanged.
 
 ### Current Behavior
 
@@ -109,6 +115,9 @@ commit message conventions before opening PR.
 - [x] Test Case 7: Invalid or missing repository — returns an appropriate error/inaccessible badge when the repo does not exist
 - [x] Test Case 8: Repository with no discussions — handles a valid repo that returns zero discussions without breaking render logic
 - [x] Test Case 9: Total variant render — badge label shows `total` and existing render behaviour is preserved for the default path
+
+
+![test](images/test.png)
 
 All 9 cases run with `npm run test:services -- --only=GithubDiscussions` — no live GitHub token required; the service tester mocks API responses for URL construction, transform, and render checks.
 
