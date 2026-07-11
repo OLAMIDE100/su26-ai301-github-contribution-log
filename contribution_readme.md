@@ -207,7 +207,7 @@ Examples:
 - 28/06/2026: Pull request name update to enable automated ci testing
 
 
-**Status:** Iterating
+**Status:** Merged
 
 ---
 
